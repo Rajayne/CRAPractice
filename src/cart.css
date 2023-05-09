@@ -1,0 +1,15 @@
+.Cart {
+  border: 2px solid black;
+  width: 400px;
+  margin: 20px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.Cart-header {
+  color: purple;
+}
+
+.Cart-total {
+  color: red;
+}

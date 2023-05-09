@@ -6,6 +6,39 @@
 > **Importing:**
 > If importing by name, must import using curly brackets.
 
+# Styling JSX
+
+- Use className instead of class for JSX as 'class' is a reserved word in JS.
+- Conventional to add `className="Component"` onto each component and use as prefix for sub-items:
+
+```
+<div className="Home">
+  <h1 className="Home-owner">{this.props.owner}</h1>
+  <p className="Home-address">{this.props.address}</p>
+  <p className="Home-value">{this.props.value}</p>
+</div>
+```
+
+# React.Fragment
+
+React will only return one parent element at a time, error will require adjacent elements to be wrapped in enclosing tag.
+
+- React.Fragment prevents unnecessary tags, and can also be included with empty open and closing angle brackets.
+
+```
+<React.Fragment>
+  <h1>Home Page</h1>
+  <p>Welcome</p>
+</React.Fragment>
+
+OR
+
+<>
+  <h1>Home Page</h1>
+  <p>Welcome</p>
+</>
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
