@@ -1,12 +1,14 @@
-import React from "react";
-let count = 0;
+import React, { useState } from "react";
 
 const Clicker = () => {
-  const counter = () => {
-    count += 1;
-    console.log(count);
-  };
-  return <button onClick={counter}>Click Me!</button>;
+  const [count, setCount] = useState(0);
+  return (
+    <>
+      <h1>Count is: {count} </h1>
+      <button onClick={() => setCount(count + 1)}>Add!</button>
+      <button onClick={() => setCount(count - 1)}>Subtract!</button>
+    </>
+  );
 };
 
 const ButtonGroup = () => {

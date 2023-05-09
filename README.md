@@ -12,6 +12,11 @@ Props:
 - data passed to component
 - immutable, cannot change its own property
 
+State:
+
+- data specific to component
+- can change
+
 > **Exporting:** Can export default value or by name
 
 > **Importing:** If importing by name, must import using curly brackets.
@@ -61,6 +66,14 @@ DOM JS:
 React:
 <button onClick={activate}>Activate</button>
 ```
+
+# State
+
+State is used for:
+
+- Hiding or showing data (toggling)
+- Fetching data from API
+- Themes, colors or styles that change based on event
 
 # Getting Started with Create React App
 
