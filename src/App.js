@@ -16,6 +16,7 @@ function App() {
         <h1>Error!</h1>
       </Alert>
       <NumberGame />
+      <NumberGame />
       <Clicker />
       <ButtonGroup />
       <ShoppingCart items={items} username="Raja" />

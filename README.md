@@ -75,6 +75,18 @@ State is used for:
 - Fetching data from API
 - Themes, colors or styles that change based on event
 
+## State v Props
+
+- If data needs to change it needs to be in state
+
+```
+Example:
+Component GameBoard
+Score = state (changes)
+numRows/numColumns = props (doesn't change)
+displayText = state (changes, can be either)
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
