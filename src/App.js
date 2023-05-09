@@ -4,6 +4,7 @@ import items from "./items";
 import ShoppingCart from "./cart";
 import Alert from "./alert.js";
 import { Clicker, ButtonGroup } from "./clicker.js";
+import NumberGame from "./NumberGame.js";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Alert variant="danger">
         <h1>Error!</h1>
       </Alert>
+      <NumberGame />
       <Clicker />
       <ButtonGroup />
       <ShoppingCart items={items} username="Raja" />
