@@ -1,10 +1,20 @@
 # Create React App Practice
 
-> **Exporting:**
-> Can export default value or by name
+## Core Concepts
 
-> **Importing:**
-> If importing by name, must import using curly brackets.
+Components:
+
+- building block of React
+- combines logic and presentation
+
+Props:
+
+- data passed to component
+- immutable, cannot change its own property
+
+> **Exporting:** Can export default value or by name
+
+> **Importing:** If importing by name, must import using curly brackets.
 
 # Styling JSX
 
@@ -42,6 +52,7 @@ OR
 # DOM v React (Events)
 
 - Adding inline event handlers, React events are camelCase v lowercase
+- Can include args for events
 
 ```
 DOM JS:

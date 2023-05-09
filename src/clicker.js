@@ -9,4 +9,17 @@ const Clicker = () => {
   return <button onClick={counter}>Click Me!</button>;
 };
 
-export default Clicker;
+const ButtonGroup = () => {
+  const printColor = (color) => {
+    console.log(`You clicked: ${color.toUpperCase()}`);
+  };
+  return (
+    <div>
+      <button onClick={() => printColor("Red")}>Red</button>
+      <button onClick={() => printColor("Yellow")}>Yellow</button>
+      <button onClick={() => printColor("Blue")}>Blue</button>
+    </div>
+  );
+};
+
+export { Clicker, ButtonGroup };
