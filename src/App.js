@@ -3,6 +3,7 @@ import cats, { meow } from "./cats";
 import items from "./items";
 import ShoppingCart from "./cart";
 import Alert from "./alert.js";
+import Clicker from "./clicker.js";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Alert variant="danger">
         <h1>Error!</h1>
       </Alert>
+      <Clicker />
       <ShoppingCart items={items} username="Raja" />
       <ul>
         <li>Name: {cats[0].name}</li>

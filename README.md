@@ -39,6 +39,18 @@ OR
 </>
 ```
 
+# DOM v React (Events)
+
+- Adding inline event handlers, React events are camelCase v lowercase
+
+```
+DOM JS:
+<button onclick="activate()">Activate</button>
+
+React:
+<button onClick={activate}>Activate</button>
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
