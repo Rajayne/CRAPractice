@@ -69,11 +69,61 @@ React:
 
 # State
 
+const [data, setData] = useState(initialState)
+
+- data = returned state / variable
+- setData = function to update state / data
+- initialState = set initial value of data
+
 State is used for:
 
 - Hiding or showing data (toggling)
 - Fetching data from API
 - Themes, colors or styles that change based on event
+
+## Changing State
+
+State
+
+```
+function Counter() {
+  const [num, setNum] = useState(0)
+
+  const increment2 = () => {
+    setNum(n + 1)
+    setNum(n + 1)
+  }
+
+  return (
+    <div>
+      <h3>Count: {num}</h3>
+      <button onClick={increment2}>+2</button>
+    </div>
+  )
+}
+```
+
+> > Will return num = 1 because second setNum will run before first is completed.
+
+```
+function Counter() {
+  const [num, setNum] = useState(0)
+
+  const increment2 = () => {
+    setNum(n => n + 1)
+    setNum(n => n + 1)
+  }
+
+  return (
+    <div>
+      <h3>Count: {num}</h3>
+      <button onClick={increment2}>+2</button>
+    </div>
+  )
+}
+```
+
+> > Will return num = 2 because it passes in callback which waits for all previous requests
 
 ## State v Props
 
