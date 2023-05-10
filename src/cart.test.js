@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import App from "./App";
+import ShoppingCart from "./cart";
 import items from "./items";
 
 test("renders without crashing", () => {
-  render(<App items={items} username="Raja" />);
+  render(<ShoppingCart items={items} />);
 });

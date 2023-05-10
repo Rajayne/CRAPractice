@@ -87,6 +87,25 @@ numRows/numColumns = props (doesn't change)
 displayText = state (changes, can be either)
 ```
 
+# Testing
+
+- Jest and react-testing-library
+
+## Smoke Test
+
+Does the component render?
+
+## Snapshot Test
+
+Does the component's rendered HTML render correctly?
+
+- Uses asFragment and asSnapshot to compare previous renders
+- Command u to update snapshot or command i to interactively update
+
+## Specialized Test
+
+- .getByText() find first matching element by text (throws error if nothing found)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
