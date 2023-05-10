@@ -104,7 +104,15 @@ Does the component's rendered HTML render correctly?
 
 ## Specialized Test
 
-- .getByText() find first matching element by text (throws error if nothing found)
+Queries find elements on the page to test.
+
+- exact defaults to true, i.e. getByText matches full strings, case-sensitive
+- set {exact: false} for partial match i.e. `count` to `Count is:`
+
+1. **.getBy** find first matching element
+2. **.getAllBy** finds all matching elements
+
+> > Queries include getBy/getAllBy: Text, Placeholder, LabelText, TestId, Role, DisplayValue
 
 # Getting Started with Create React App
 
