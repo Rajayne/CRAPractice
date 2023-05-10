@@ -114,6 +114,13 @@ Queries find elements on the page to test.
 
 > > Queries include getBy/getAllBy: Text, Placeholder, LabelText, TestId, Role, DisplayValue
 
+## Jest DOM Extended Matchers
+
+- **.toHaveClass()** to check whether element has a certain class
+- **.toBeInTheDocument()** to check whether element is in DOM
+- **.toContainHTML()** to check if element contains certain HTML
+- **.toBeEmpty()** to check if element has content
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
