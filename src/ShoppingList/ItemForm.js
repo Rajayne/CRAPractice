@@ -20,7 +20,7 @@ const NewItemForm = ({ addItem }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Product Name: </label>
+      <label htmlFor="name">Product: </label>
       <input
         type="text"
         id="name"
