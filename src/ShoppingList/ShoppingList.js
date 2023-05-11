@@ -9,8 +9,8 @@ const ShoppingList = () => {
   ];
   const [items, setItems] = useState(initialState);
 
-  const addItem = (name, qty) => {
-    setItems((items) => [...items, { name, qty }]);
+  const addItem = (newItem) => {
+    setItems((items) => [...items, { ...newItem }]);
   };
 
   return (

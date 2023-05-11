@@ -13,9 +13,8 @@ const NewItemForm = ({ addItem }) => {
   };
 
   const handleSubmit = (e) => {
-    const { name, qty } = formData;
     e.preventDefault();
-    addItem(name, qty);
+    addItem({ ...formData });
     setFormData(initialState);
   };
 
