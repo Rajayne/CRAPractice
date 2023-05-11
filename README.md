@@ -4,18 +4,23 @@
 
 Components:
 
-- building block of React
-- combines logic and presentation
+- Building block of React
+- Combines logic and presentation
 
 Props:
 
-- data passed to component
-- immutable, cannot change its own property
+- Data passed to component
+- Immutable, cannot change its own property
 
 State:
 
-- data specific to component
-- can change
+- Data specific to component
+- Can change
+
+Keys:
+
+- List items need unique key identifiers
+- Avoid using index as keys
 
 > **Exporting:** Can export default value or by name
 
@@ -136,6 +141,12 @@ Score = state (changes)
 numRows/numColumns = props (doesn't change)
 displayText = state (changes, can be either)
 ```
+
+# Forms & Controlled Components
+
+- HTML form elements naturally keep some internal state and update it based on input
+- In React mutable state is kept in the state of components and only updated with the function returned to useState()
+  > Use **Controlled Components** to have React control what is shown and form state
 
 # Testing
 

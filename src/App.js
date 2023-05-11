@@ -5,11 +5,15 @@ import ShoppingCart from "./cart";
 import Alert from "./alert.js";
 import { Clicker, ButtonGroup } from "./clicker.js";
 import NumberGame from "./NumberGame.js";
+import NumbersList from "./NumbersList.js";
+import UserForm from "./UserForm.js";
 
 function App() {
   return (
     <div className="App">
-      <Alert variant="success">
+      <UserForm />
+      <NumbersList />
+      {/* <Alert variant="success">
         <h1>Welcome back!</h1>
       </Alert>
       <Alert variant="danger">
@@ -25,7 +29,7 @@ function App() {
         <li>Midna goes {meow()}</li>
       </ul>
       <p>Sum(3, 7) = {sum(3, 7)}</p>
-      <p>Multiply(4, 9) = {multiply(4, 9)}</p>
+      <p>Multiply(4, 9) = {multiply(4, 9)}</p> */}
     </div>
   );
 }
