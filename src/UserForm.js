@@ -6,9 +6,18 @@ const UserForm = () => {
     setUsername(e.target.value);
     console.log(e.target.value);
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Created user: ${username}`);
+  };
+
+  //Alternative: button onClick={handleSubmit}
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="username">Username:</label>
       <input
+        id="username"
         type="text"
         placeholder="username"
         value={username}
