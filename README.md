@@ -146,7 +146,7 @@ displayText = state (changes, can be either)
 
 - HTML form elements naturally keep some internal state and update it based on input
 - In React mutable state is kept in the state of components and only updated with the function returned to useState()
-  > Use **Controlled Components** to have React control what is shown and form state
+  > **Controlled Components** are input elements controlled by React (visible input/input state)
 
 # Testing
 
