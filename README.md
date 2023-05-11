@@ -148,6 +148,12 @@ displayText = state (changes, can be either)
 - In React mutable state is kept in the state of components and only updated with the function returned to useState()
 - Use htmlFor instead of for in labels
   > **Controlled Components** are input elements controlled by React (visible input/input state)
+  > **Uncontrolled Components** are input elements React is _not_ in control of.
+
+## Formik
+
+- Helps with form validation
+- Formik Material UI can be used for formatting
 
 # Testing
 
