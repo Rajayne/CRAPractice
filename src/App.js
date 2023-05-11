@@ -7,12 +7,14 @@ import { Clicker, ButtonGroup } from "./clicker.js";
 import NumberGame from "./NumberGame.js";
 import NumbersList from "./NumbersList.js";
 import UserForm from "./UserForm.js";
+import ShoppingList from "./ShoppingList/ShoppingList.js";
 
 function App() {
   return (
     <div className="App">
-      <UserForm />
-      <NumbersList />
+      <ShoppingList />
+      {/* <UserForm />
+      <NumbersList /> */}
       {/* <Alert variant="success">
         <h1>Welcome back!</h1>
       </Alert>
