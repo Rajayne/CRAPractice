@@ -72,7 +72,17 @@ React:
 <button onClick={activate}>Activate</button>
 ```
 
-# State
+# Hooks
+
+## useEffect
+
+Runs "side effects"
+
+- useEffect(callback, array)
+
+  > **Side Effects:**fetching data, starting a timer, changing DOM
+
+## useState
 
 const [data, setData] = useState(initialState)
 
@@ -86,7 +96,7 @@ State is used for:
 - Fetching data from API
 - Themes, colors or styles that change based on event
 
-## Changing State
+### Changing State
 
 State
 
@@ -130,7 +140,7 @@ function Counter() {
 
 > > Will return num = 2 because it passes in callback which waits for all previous requests
 
-## State v Props
+### State v Props
 
 - If data needs to change it needs to be in state
 
