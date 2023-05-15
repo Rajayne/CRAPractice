@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Timer = () => {
+const Wow = () => {
   const [num, setNum] = useState(0);
 
   function increment(evt) {
@@ -19,4 +19,4 @@ const Timer = () => {
   );
 };
 
-export default Timer;
+export default Wow;
