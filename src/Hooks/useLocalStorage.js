@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 const useLocalStorageState = (key, defaultValue) => {
   const [state, setState] = useState(() => {
     let value = window.localStorage.getItem(key) || defaultValue;
-    console.log(`Key: ${key} Default: ${defaultValue}`);
     return value;
   });
 
