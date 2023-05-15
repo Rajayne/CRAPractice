@@ -11,13 +11,11 @@ const ProfileWithSearch = ({ name = "Elie", color }) => {
   };
 
   useEffect(() => {
-    console.log("Loading Data");
     async function loadProfile() {
       const res = await axios.get(url);
       setData(res.data.name);
     }
     loadProfile();
-    return () => console.log("Clean Up Function");
   }, [url]);
 
   return (
