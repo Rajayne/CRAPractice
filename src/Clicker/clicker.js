@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
+import useLocalStorageState from "../Hooks/useLocalStorage";
 
 const Clicker = () => {
-  const [count, setCount] = useState(() => {
-    let value;
-    value = JSON.parse(window.localStorage.getItem("count") || 0);
-    return value;
-  });
+  const [count, setCount] = useLocalStorageState("count", 0);
+  // const [count, setCount] = useState(() => {
+  //   let value;
+  //   value = JSON.parse(window.localStorage.getItem("count") || 0);
+  //   return value;
+  // });
 
-  useEffect(() => {
-    window.localStorage.setItem("count", count);
-  }, [count]);
+  // useEffect(() => {
+  //   window.localStorage.setItem("count", count);
+  // }, [count]);
 
   const plus2 = () => {
     setCount((n) => n + 1);
