@@ -1,7 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Clicker = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(() => {
+    let value;
+    value = JSON.parse(window.localStorage.getItem("count") || 0);
+    return value;
+  });
+
+  useEffect(() => {
+    window.localStorage.setItem("count", count);
+  }, [count]);
 
   const plus2 = () => {
     setCount((n) => n + 1);

@@ -1,9 +1,9 @@
-import MoodClicker from "./Mood/MoodClicker";
+import { Clicker } from "./Clicker/clicker";
 
 function App() {
   return (
     <div className="App">
-      <MoodClicker />
+      <Clicker />
     </div>
   );
 }
