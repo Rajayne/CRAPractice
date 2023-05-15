@@ -74,12 +74,20 @@ React:
 
 # Hooks
 
+## useRef
+
+- Returns mutable object with key of `current` whose value is equal to the intial value passed into the hook
+- Object persists across renders (like a local variable but independent of state)
+- Mutating the object does not trigger a re-render
+
 ## useEffect
 
 Runs "side effects"
 
 - useEffect(callback, array)
 - cannot be an async function, must define async function inside useEffect then invoke
+- Dependencies array
+
   > **Side Effects:**fetching data, starting a timer, changing DOM
 
 ## useState

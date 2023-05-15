@@ -1,22 +1,16 @@
 import React, { useState, useEffect } from "react";
 
 const Timer = () => {
-  const [num, setNum] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setSeconds((seconds) => seconds + 1);
+    }, 1000);
+    console.log("Clean Up", id);
+    return () => clearInterval(id);
+  }, []);
 
-  function increment(evt) {
-    setNum((n) => n + 1);
-  }
-
-  useEffect(function setTitleOnRerender() {
-    document.title = `WOW${"!".repeat(num)}`;
-  });
-
-  return (
-    <div>
-      Let's get excited.
-      <button onClick={increment}>Get more excited.</button>
-    </div>
-  );
+  return <h1>{seconds}</h1>;
 };
 
 export default Timer;
