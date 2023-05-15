@@ -1,9 +1,9 @@
-import ProfileViewer from "./Profile/Profile.js";
+import ProfileWithSearch from "./Profile/ProfileWithSearch.js";
 
 function App() {
   return (
     <div className="App">
-      <ProfileViewer />
+      <ProfileWithSearch />
     </div>
   );
 }
