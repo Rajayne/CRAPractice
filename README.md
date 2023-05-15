@@ -79,6 +79,7 @@ React:
 Runs "side effects"
 
 - useEffect(callback, array)
+- cannot be an async function, must define async function inside useEffect then invoke
 
   > **Side Effects:**fetching data, starting a timer, changing DOM
 

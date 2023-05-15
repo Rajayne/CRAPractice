@@ -1,9 +1,9 @@
-import Timer from "./Timer/Timer.js";
+import ProfileViewer from "./Profile/Profile.js";
 
 function App() {
   return (
     <div className="App">
-      <Timer />
+      <ProfileViewer />
     </div>
   );
 }
